@@ -427,7 +427,7 @@
     ]
   },
   "ropsten": {
-    "address": "0x5E548209e8aCD067a29b10b2a6Da821b5c55f244",
+    "address": "0xe8007bec9b9d55c779ecbc8f56f59d16f616d160",
     "abi": [
       {
         "constant": true,
@@ -522,6 +522,20 @@
       {
         "constant": true,
         "inputs": [],
+        "name": "wallet",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
         "name": "paused",
         "outputs": [
           {
@@ -594,15 +608,15 @@
             "type": "bool"
           },
           {
-            "name": "startTime",
+            "name": "creationTime",
             "type": "uint256"
           },
           {
-            "name": "endTime",
+            "name": "expiryTime",
             "type": "uint256"
           },
           {
-            "name": "participatingWindow",
+            "name": "participationDeadline",
             "type": "uint256"
           },
           {
@@ -1015,6 +1029,38 @@
           }
         ],
         "name": "LogReturnEther",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "orderId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "startTime",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "startPrice",
+            "type": "int256"
+          },
+          {
+            "indexed": false,
+            "name": "endTime",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "endPrice",
+            "type": "int256"
+          }
+        ],
+        "name": "LogWinningOraclePrices",
         "type": "event"
       },
       {
