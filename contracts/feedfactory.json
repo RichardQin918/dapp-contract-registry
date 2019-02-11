@@ -1,0 +1,60 @@
+{
+    "ropsten": {
+        "address": "0x5C00113AFC20D29057b01431c935Ab1a4b7C97F6",
+        "abi": [
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "name": "isFeed",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "bool"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function",
+                "signature": "0xe58fdd04"
+            },
+            {
+                "anonymous": false,
+                "inputs": [
+                    {
+                        "indexed": true,
+                        "name": "sender",
+                        "type": "address"
+                    },
+                    {
+                        "indexed": false,
+                        "name": "feed",
+                        "type": "address"
+                    }
+                ],
+                "name": "Created",
+                "type": "event",
+                "signature": "0x587ece4cd19692c5be1a4184503d607d45542d2aca0698c0068f52e09ccb541c"
+            },
+            {
+                "constant": false,
+                "inputs": [],
+                "name": "create",
+                "outputs": [
+                    {
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function",
+                "signature": "0xefc81a8c"
+            }
+        ]
+    }
+}

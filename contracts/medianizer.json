@@ -1,391 +1,830 @@
 {
-    "ropsten": {
-        "address": "0xd950dB5297A369c66eB0b6D6695FF34ED9F0FfdC",
-        "abi": [
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "owner_",
-                  "type": "address"
-                }
-              ],
-              "name": "setOwner",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0x13af4035"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "myn",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "uint96"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x2d4ef00d"
-            },
-            {
-              "constant": true,
-              "inputs": [
-                {
-                  "name": "",
-                  "type": "address"
-                }
-              ],
-              "name": "indexes",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "bytes12"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x2db78d93"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "next",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "bytes12"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x4c8fe526"
-            },
-            {
-              "constant": true,
-              "inputs": [
-                {
-                  "name": "",
-                  "type": "bytes12"
-                }
-              ],
-              "name": "values",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "address"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x651dd0de"
-            },
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "authority_",
-                  "type": "address"
-                }
-              ],
-              "name": "setAuthority",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0x7a9e5e4b"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "owner",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "address"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x8da5cb5b"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "has",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "bool"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0xb689d5ac"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "authority",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "address"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0xbf7e214f"
-            },
-            {
-              "anonymous": false,
-              "inputs": [
-                {
-                  "indexed": false,
-                  "name": "val",
-                  "type": "bytes32"
-                }
-              ],
-              "name": "LogValue",
-              "type": "event",
-              "signature": "0x296ba4ca62c6c21c95e828080cb8aec7481b71390585605300a8a76f9e95b527"
-            },
-            {
-              "anonymous": true,
-              "inputs": [
-                {
-                  "indexed": true,
-                  "name": "sig",
-                  "type": "bytes4"
-                },
-                {
-                  "indexed": true,
-                  "name": "guy",
-                  "type": "address"
-                },
-                {
-                  "indexed": true,
-                  "name": "foo",
-                  "type": "bytes32"
-                },
-                {
-                  "indexed": true,
-                  "name": "bar",
-                  "type": "bytes32"
-                },
-                {
-                  "indexed": false,
-                  "name": "fax",
-                  "type": "bytes"
-                }
-              ],
-              "name": "LogNote",
-              "type": "event",
-              "signature": "0xd3d8bec38a91a5f4411247483bc030a174e77cda9c0351924c759f41453aa5e8"
-            },
-            {
-              "anonymous": false,
-              "inputs": [
-                {
-                  "indexed": true,
-                  "name": "authority",
-                  "type": "address"
-                }
-              ],
-              "name": "LogSetAuthority",
-              "type": "event",
-              "signature": "0x1abebea81bfa2637f28358c371278fb15ede7ea8dd28d2e03b112ff6d936ada4"
-            },
-            {
-              "anonymous": false,
-              "inputs": [
-                {
-                  "indexed": true,
-                  "name": "owner",
-                  "type": "address"
-                }
-              ],
-              "name": "LogSetOwner",
-              "type": "event",
-              "signature": "0xce241d7ca1f669fee44b6fc00b8eba2df3bb514eed0f6f668f8f89096e81ed94"
-            },
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "wat",
-                  "type": "address"
-                }
-              ],
-              "name": "set",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0x2801617e"
-            },
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "pos",
-                  "type": "bytes12"
-                },
-                {
-                  "name": "wat",
-                  "type": "address"
-                }
-              ],
-              "name": "set",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0xbeb38b43"
-            },
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "min_",
-                  "type": "uint96"
-                }
-              ],
-              "name": "setMin",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0x6ba5ef0d"
-            },
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "next_",
-                  "type": "bytes12"
-                }
-              ],
-              "name": "setNext",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0xf2c5925d"
-            },
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "wat",
-                  "type": "address"
-                }
-              ],
-              "name": "unset",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0x2966d1b9"
-            },
-            {
-              "constant": false,
-              "inputs": [
-                {
-                  "name": "pos",
-                  "type": "bytes12"
-                }
-              ],
-              "name": "unset",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0xe0a1fdad"
-            },
-            {
-              "constant": false,
-              "inputs": [],
-              "name": "void",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0xac4c25b2"
-            },
-            {
-              "constant": false,
-              "inputs": [],
-              "name": "poke",
-              "outputs": [],
-              "payable": false,
-              "stateMutability": "nonpayable",
-              "type": "function",
-              "signature": "0x18178358"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "peek",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "bytes32"
-                },
-                {
-                  "name": "",
-                  "type": "bool"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x59e02dd7"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "read",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "bytes32"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x57de26a4"
-            },
-            {
-              "constant": true,
-              "inputs": [],
-              "name": "compute",
-              "outputs": [
-                {
-                  "name": "",
-                  "type": "bytes32"
-                },
-                {
-                  "name": "",
-                  "type": "bool"
-                }
-              ],
-              "payable": false,
-              "stateMutability": "view",
-              "type": "function",
-              "signature": "0x1a43c338"
-            }
-        ]
-    }
+  "ropsten": {
+    "address": "0xd950dB5297A369c66eB0b6D6695FF34ED9F0FfdC",
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "owner_",
+            "type": "address"
+          }
+        ],
+        "name": "setOwner",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x13af4035"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "stakeTime",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x2170e472"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "stakesFor",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x25a1dfe0"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "myn",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x2d4ef00d"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "indexes",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x2db78d93"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "val",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x3c6bb436"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "name": "feeds",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x4a5479f3"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "next",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x4c8fe526"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "minStakeDuration",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x5fec5c64"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "authority_",
+            "type": "address"
+          }
+        ],
+        "name": "setAuthority",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x7a9e5e4b"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x8da5cb5b"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "has",
+        "outputs": [
+          {
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0xb689d5ac"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "authority",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0xbf7e214f"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "stakeSender",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0xde778dd1"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "token",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0xfc0c546a"
+      },
+      {
+        "inputs": [
+          {
+            "name": "_minStakeDuration",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor",
+        "signature": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "val",
+            "type": "uint256"
+          }
+        ],
+        "name": "LogValue",
+        "type": "event",
+        "signature": "0xfcf771399d75a67a6d0e730ae98d34c40b6bfe6ebf8053b98ddf4da8c2706250"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "newValue",
+            "type": "uint256"
+          }
+        ],
+        "name": "MinBlocksUpdated",
+        "type": "event",
+        "signature": "0x3f9b4ec1b01b6ead80d9968c89b064638bb9e72cbacbd45664d38acdd3b6d4bb"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "total",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "Staked",
+        "type": "event",
+        "signature": "0xc65e53b88159e7d2c0fc12a0600072e28ae53ff73b4c1715369c30f160935142"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "total",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "Unstaked",
+        "type": "event",
+        "signature": "0xaf01bfc8475df280aca00b578c4a948e6d95700f0db8c13365240f7f973c8754"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "pos",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "name": "feed",
+            "type": "address"
+          }
+        ],
+        "name": "FeedSet",
+        "type": "event",
+        "signature": "0xcb9c5cab7a629e9e21f21c2e7feda9eb584ae198580ceaf18fb93558a8acd4e5"
+      },
+      {
+        "anonymous": true,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "sig",
+            "type": "bytes4"
+          },
+          {
+            "indexed": true,
+            "name": "guy",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "name": "foo",
+            "type": "bytes32"
+          },
+          {
+            "indexed": true,
+            "name": "bar",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "name": "fax",
+            "type": "bytes"
+          }
+        ],
+        "name": "LogNote",
+        "type": "event",
+        "signature": "0xd3d8bec38a91a5f4411247483bc030a174e77cda9c0351924c759f41453aa5e8"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "authority",
+            "type": "address"
+          }
+        ],
+        "name": "LogSetAuthority",
+        "type": "event",
+        "signature": "0x1abebea81bfa2637f28358c371278fb15ede7ea8dd28d2e03b112ff6d936ada4"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "name": "owner",
+            "type": "address"
+          }
+        ],
+        "name": "LogSetOwner",
+        "type": "event",
+        "signature": "0xce241d7ca1f669fee44b6fc00b8eba2df3bb514eed0f6f668f8f89096e81ed94"
+      },
+      {
+        "constant": false,
+        "inputs": [],
+        "name": "isERC20",
+        "outputs": [
+          {
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x2eb67f53"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "_minStakeDuration",
+            "type": "uint256"
+          }
+        ],
+        "name": "setMinStakeDuration",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0xaafc5d47"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "pos",
+            "type": "uint256"
+          },
+          {
+            "name": "feed",
+            "type": "address"
+          }
+        ],
+        "name": "set",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x2f30c6f6"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "feed",
+            "type": "address"
+          }
+        ],
+        "name": "set",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x2801617e"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "min_",
+            "type": "uint256"
+          }
+        ],
+        "name": "setMin",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x45dc3dd8"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "next_",
+            "type": "uint256"
+          }
+        ],
+        "name": "setNext",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x13b80623"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "feed",
+            "type": "address"
+          }
+        ],
+        "name": "unset",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x2966d1b9"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "pos",
+            "type": "uint256"
+          }
+        ],
+        "name": "unset",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x088d2255"
+      },
+      {
+        "constant": false,
+        "inputs": [],
+        "name": "void",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0xac4c25b2"
+      },
+      {
+        "constant": false,
+        "inputs": [],
+        "name": "poke",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x18178358"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "peek",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          },
+          {
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x59e02dd7"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "read",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x57de26a4"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "stake",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x0e89439b"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "stakeFor",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x0ef96356"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "stakeEthFor",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function",
+        "signature": "0x598144c4"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "user",
+            "type": "address"
+          }
+        ],
+        "name": "unstakeEthFrom",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0x36e53589"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "unstake",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "signature": "0xc8fd6ed0"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "addr",
+            "type": "address"
+          }
+        ],
+        "name": "totalStakedFor",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x4b341aed"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "totalStaked",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x817b1cd2"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "supportsHistory",
+        "outputs": [
+          {
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "pure",
+        "type": "function",
+        "signature": "0x7033e4a6"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "addr",
+            "type": "address"
+          }
+        ],
+        "name": "lastStakedFor",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x233b7451"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "name": "blockNumber",
+            "type": "uint256"
+          }
+        ],
+        "name": "totalStakedForAt",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0xede38421"
+      },
+      {
+        "constant": true,
+        "inputs": [
+          {
+            "name": "blockNumber",
+            "type": "uint256"
+          }
+        ],
+        "name": "totalStakedAt",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0xc9c53232"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "compute",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          },
+          {
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x1a43c338"
+      }
+    ]
+  }
 }
