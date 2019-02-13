@@ -1,6 +1,6 @@
 {
   "ropsten": {
-    "address": "0xd950dB5297A369c66eB0b6D6695FF34ED9F0FfdC",
+    "address": "0x8845d2B60AEB334deA694c7C0dc157eAb451dbC5",
     "abi": [
       {
         "constant": false,
